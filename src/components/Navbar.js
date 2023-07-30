@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const NavbarComponent = ({ allCategories }) => {
     console.log("NavbarComponent allCategories", allCategories);
@@ -20,7 +21,13 @@ const NavbarComponent = ({ allCategories }) => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Pricing</a>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#"> <b>Login</b></a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/pcbuilder"><b>PC Builder</b></a>
+                            </li>
+                            {/* <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown link
                                 </a>
@@ -29,7 +36,7 @@ const NavbarComponent = ({ allCategories }) => {
                                     <li><a className="dropdown-item" href="#">Another action</a></li>
                                     <li><a className="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

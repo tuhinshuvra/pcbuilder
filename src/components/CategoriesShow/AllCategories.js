@@ -1,6 +1,7 @@
 import React from 'react';
 import CategoriesDisplay from './CategoriesDisplay';
 import ProductDetailsPage from '@/pages/categories/[categoriesId]';
+import PCBbuilderSection from '@/pages/pcbuilder';
 
 const AllCategories = ({ allCategories }) => {
     // console.log("Categories Show allCategories : ", allCategories);
@@ -13,6 +14,15 @@ const AllCategories = ({ allCategories }) => {
                         key={category.id}
                         category={category}
                     ></CategoriesDisplay>
+                )}
+
+            </div>
+            <div className=' col-10 mx-auto d-flex flex-column  bg-secondary shadow-lg'>
+                {allCategories.map((category) =>
+                    <PCBbuilderSection
+                        key={category.id}
+                        category={category}
+                    ></PCBbuilderSection>
                 )}
             </div>
         </div>
