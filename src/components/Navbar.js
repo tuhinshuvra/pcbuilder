@@ -1,12 +1,11 @@
 import Link from "next/link";
 
-const NavbarComponent = ({ allCategories }) => {
-    console.log("NavbarComponent allCategories", allCategories);
+const NavbarComponent = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">PCBuilder</a>
+                    <Link className=" text-decoration-none fw-bold fs-1" href="/">PCBuilder</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -25,18 +24,9 @@ const NavbarComponent = ({ allCategories }) => {
                                 <a className="nav-link" href="#"> <b>Login</b></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/pcbuilder"><b>PC Builder</b></a>
+                                <Link className=" text-decoration-none btn btn-primary" href="/pcbuilder">PCBuilder</Link>
                             </li>
-                            {/* <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown link
-                                </a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li> */}
+
                         </ul>
                     </div>
                 </div>
@@ -46,3 +36,5 @@ const NavbarComponent = ({ allCategories }) => {
 };
 
 export default NavbarComponent;
+
+

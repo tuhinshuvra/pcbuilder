@@ -1,7 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import MainLayout from '@/components/Layouts/MainLayout';
 import AllCategories from '@/components/CategoriesShow/AllCategories';
 
@@ -9,7 +5,6 @@ const HomePage = ({ allCategories }) => {
   // console.log("allCategories : ", allCategories);
   return (
     <div>
-      {/* <h2>This is main homepage</h2> */}
       <AllCategories allCategories={allCategories} />
     </div>
   );
